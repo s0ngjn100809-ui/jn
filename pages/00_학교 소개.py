@@ -1,70 +1,60 @@
 import streamlit as st
 
 st.set_page_config(
-    page_title="입학 정보 | 우리학교",
-    page_icon="🎓",
+    page_title="학교 소개 | 우리학교",
+    page_icon="🏫",
     layout="centered"
 )
 
-st.title("🎓 입학 정보")
-st.write("우리학교 입학을 희망하는 학생들을 위한 안내 페이지입니다.")
+st.title("🏫 우리학교 소개")
+st.write("우리학교에 오신 것을 환영합니다!")
 
 st.divider()
 
-# 1. 전형 안내
-st.header("📌 전형 안내")
-
-col1, col2 = st.columns(2)
-
-with col1:
-    st.subheader("수시 전형")
-    st.write("""
-    - 학교생활기록부 중심 평가  
-    - 면접 실시  
-    - 지원 자격: 중학교 졸업(예정)자
-    """)
-
-with col2:
-    st.subheader("정시 전형")
-    st.write("""
-    - 필기시험 + 면접  
-    - 성적 기준 선발  
-    - 지원 자격: 중학교 졸업자
-    """)
-
-st.divider()
-
-# 2. 입학 일정
-st.header("🗓️ 입학 일정")
-
-st.table({
-    "구분": ["원서 접수", "면접", "합격자 발표"],
-    "일정": ["2026.09.01 ~ 09.07", "2026.09.20", "2026.10.01"]
-})
-
-st.divider()
-
-# 3. 지원 절차
-st.header("📝 지원 절차")
-
-st.markdown("""
-1️⃣ 온라인 원서 접수  
-2️⃣ 서류 제출  
-3️⃣ 면접 및 평가  
-4️⃣ 합격자 발표  
-5️⃣ 등록 및 입학
+# 학교 개요
+st.header("📌 학교 개요")
+st.write("""
+우리학교는 학생 중심의 교육을 바탕으로
+미래 사회를 이끌어 갈 창의적인 인재를
+양성하는 것을 목표로 하고 있습니다.
 """)
 
 st.divider()
 
-# 4. FAQ
-st.header("❓ 자주 묻는 질문")
+# 교육 이념
+st.header("🎯 교육 이념")
+st.write("""
+- 학생 중심 교육
+- 창의적 사고 능력 함양
+- 올바른 인성과 책임감 있는 시민 양성
+""")
 
-with st.expander("Q. 복수 지원이 가능한가요?"):
-    st.write("아니요. 우리학교는 1회만 지원 가능합니다.")
+st.divider()
 
-with st.expander("Q. 면접은 어떤 방식인가요?"):
-  File "/mount/src/jn/pages/00_학교 소개.py", line 67
-      st.write("학생부
-               ^
-SyntaxError: unterminated string literal (detected at line 67)
+# 입학 전형 소개  ✅ 문제 나던 부분 완전 수정
+st.header("🎓 입학 전형")
+st.write("""
+우리학교의 입학 전형은
+학생부 중심 전형으로 진행됩니다.
+
+학교생활기록부와 면접을 통해
+학생의 잠재력과 성장 가능성을
+종합적으로 평가하여 선발합니다.
+""")
+
+st.divider()
+
+# 학교 시설
+st.header("🏢 학교 시설")
+st.write("""
+- 최신식 교실
+- 과학 실험실
+- 컴퓨터실
+- 도서관
+- 체육관
+""")
+
+st.divider()
+
+st.info("📞 궁금한 사항은 [문의] 페이지를 이용해주세요.")
+

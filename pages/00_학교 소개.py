@@ -64,4 +64,7 @@ with st.expander("Q. 복수 지원이 가능한가요?"):
     st.write("아니요. 우리학교는 1회만 지원 가능합니다.")
 
 with st.expander("Q. 면접은 어떤 방식인가요?"):
-    st.write("학생부
+  File "/mount/src/jn/pages/00_학교 소개.py", line 67
+      st.write("학생부
+               ^
+SyntaxError: unterminated string literal (detected at line 67)
